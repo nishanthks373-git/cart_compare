@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cart Compare</string>
+    <string name="share_label">Compare prices</string>
+    <string name="channel_price_alerts">Price alerts</string>
+    <string name="channel_price_alerts_desc">Price drops and target-price alerts for products you track</string>
+</resources>
