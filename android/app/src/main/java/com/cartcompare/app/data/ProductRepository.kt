@@ -37,7 +37,7 @@ class ProductRepository(
         val callable = functions.getHttpsCallable("lookupProduct")
         callable.setTimeout(130, TimeUnit.SECONDS)
         val result = callable.call(mapOf("text" to textOrUrl, "refresh" to refresh)).await()
-        val data = result.data as? Map<*, *> ?: error("Empty response")
+        val data = result.getData() as? Map<*, *> ?: error("Empty response")
         return data["productId"] as? String ?: error("No productId in response")
     }
 
